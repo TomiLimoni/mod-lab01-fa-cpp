@@ -3,7 +3,7 @@
 #include "fun.h"
 
 int main() {
-    const char* str1 = "Hello World 1234    ab2c def234gh 56ij78k 0    x 1ab abc12";
+    const char* str1 = "Hello World 123  ab2c de23h 56ij78k 0  x 1ab ab12";
     const char* str2 = "Hello world aBc abC ABcd abCd R ";
     const char* str3 = "";
     const char* str4 = "   ";
