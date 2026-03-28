@@ -9,20 +9,18 @@ unsigned int faStr1(const char *str) {
 
     while (*str) {
         if (*str != ' ' && !inWord) {
-            if (isdigit(*str)) 
+            if (isdigit(*str))
                 hasDigit = true;
             else
                 count++;
             inWord = true;
-        }
-        else if (*str != ' ' && inWord && isdigit(*str) && !hasDigit) {
+        } else if (*str != ' ' && inWord && isdigit(*str) && !hasDigit) {
             count--;
             hasDigit = true;
-        }
-        else if (*str == ' ' && inWord) {
+        } else if (*str == ' ' && inWord) {
             inWord = false;
             hasDigit = false;
-        } 
+        }
         str++;
     }
 
@@ -41,12 +39,10 @@ unsigned int faStr2(const char *str) {
             else
                 badWord = true;
             inWord = true;
-        }
-        else if (*str != ' ' && inWord && !islower(*str) && !badWord) {
+        } else if (*str != ' ' && inWord && !islower(*str) && !badWord) {
             count--;
             badWord = true;
-        }
-        else if (*str == ' ' && inWord) {
+        } else if (*str == ' ' && inWord) {
             inWord = false;
             badWord = false;
         }
@@ -67,11 +63,9 @@ unsigned int faStr3(const char *str) {
             countWords++;
             countLetters++;
             inWord = true;
-        }
-        else if (*str != ' ' && inWord) {
+        } else if (*str != ' ' && inWord) {
             countLetters++;
-        }
-        else if (*str == ' ' && inWord) {
+        } else if (*str == ' ' && inWord) {
             inWord = false;
         }
         str++;
