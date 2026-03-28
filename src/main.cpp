@@ -15,4 +15,5 @@ int main() {
     std::cout << str3 << " | average length = " << faStr3(str3) << "\n";
     std::cout << str4 << " | count = " << faStr2(str4) << "\n";
     std::cout << str4 << " | average length = " << faStr3(str4) << "\n";
+    return 0;
 }
